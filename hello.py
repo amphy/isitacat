@@ -11,7 +11,8 @@ def hello():
 @app.route("/result", methods=["POST"])
 def checkCat():
     img = request.form.imgurl
-    return render_template('result.html', imgurl = img)
+    print img
+    return render_template('result.html')
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
