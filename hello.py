@@ -9,7 +9,7 @@ app = Flask(__name__)
 def hello():
     return render_template('index.html')
 
-@app.route("/result", methods=["POST"])
+@app.route("/result", methods=["GET", "POST"])
 def checkCat():
     img = request.form['imgurl']
     #print img
