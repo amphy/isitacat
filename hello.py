@@ -1,6 +1,5 @@
 import os
 import json
-import requests
 from flask import Flask
 from flask import render_template
 from flask import request
@@ -18,8 +17,6 @@ def hello():
 @app.route("/result", methods=["GET", "POST"])
 def checkCat():
     img = request.form['imgurl']
-    url = url + img
-    r = requests.get(url, headers=headers)
     return render_template('result.html', imgurl = img)
 
 if __name__ == "__main__":
