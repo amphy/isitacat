@@ -1,6 +1,7 @@
 import os
 from flask import Flask
 from flask import render_template
+from flask import request
 
 app = Flask(__name__)
 
@@ -12,7 +13,7 @@ def hello():
 def checkCat():
     img = request.form.imgurl
     print img
-    return render_template('result.html')
+    #return render_template('result.html')
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
