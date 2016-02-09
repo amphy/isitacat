@@ -24,7 +24,7 @@ def checkCat():
     result = clarifai_api.tag_image_urls(img)
     res =  json.dumps(result)
     parsed_json = json.loads(res)
-    imgtag = parsed_json['results']
+    imgtag = json.dumps(parsed_json['results'])
     print imgtag
     #for x in imgtag:
         #tagging.append(str(x))
