@@ -9,10 +9,12 @@ app = Flask(__name__)
 
 clarifai_api = ClarifaiApi()
 tagging = []
-isCat = False;
+isCat = False
 
 @app.route("/")
 def hello():
+    tagging = []
+    isCat = False
     return render_template('index.html')
 
 @app.route("/result", methods=["GET", "POST"])
