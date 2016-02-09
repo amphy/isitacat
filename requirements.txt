@@ -4,4 +4,4 @@ MarkupSafe==0.18
 Werkzeug==0.9.4
 itsdangerous==0.23
 wsgiref==0.1.2
--e git+git://github.com/Clarifai/clarifai-python.git#egg=MyProject
+-e git+git://github.com/Clarifai/clarifai-python.git#egg=clarifai
