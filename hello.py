@@ -21,9 +21,9 @@ def hello():
 def checkCat():
     img = request.form['imgurl']
     result = clarifai_api.tag_image_urls(img)
-    print result
+    print json.dumps(result)
     #parsed_json = json.loads(result)
-    imgtag = result['result']['tag']['classes']
+    imgtag = result['status_code']
     imgtag = ['cat', 'dog', 'snake']
     return render_template('result.html', imgurl = img, tags = imgtag)
 
