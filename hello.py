@@ -21,7 +21,9 @@ def hello():
 def checkCat():
     img = request.form['imgurl']
     result = clarifai_api.tag_image_urls(img)
-    return render_template('result.html', imgurl = img)
+    parsed_json = json.loads(result)
+    imgtag = parsed_json['result']['tag']['classes']
+    return render_template('result.html', imgurl = img, tags = imgtag)
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))

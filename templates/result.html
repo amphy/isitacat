@@ -5,6 +5,13 @@
 
   <body>
     The image link is: {{ imgurl }}
+    <br /><br />
+    Here are the tags: <br />
+    {% for o in tags %}
+      {{ o }} <br />
+    {% endfor %}
+
+
   </body>
 
 </html>
