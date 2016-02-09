@@ -4,7 +4,7 @@ from flask import Flask
 from flask import render_template
 from flask import request
 #from query import Query
-from clarifai.clarifai.client import ClarifaiApi
+from client import ClarifaiApi
 
 app = Flask(__name__)
 
