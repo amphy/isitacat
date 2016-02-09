@@ -27,6 +27,7 @@ def checkCat():
     print imgtag2
     for x in imgtag2:
         tagging.append(x)
+        print "Checking The Phrases"
         if x == "cat":
             isCat = True
     return render_template('result.html', imgurl = img, tags = tagging, isCat = isCat)
