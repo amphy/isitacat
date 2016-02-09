@@ -25,8 +25,9 @@ def checkCat():
     res =  json.dumps(result)
     parsed_json = json.loads(res)
     imgtag = result['result']['tag']['classes']
-    for x in imgtag:
-        tagging.append(str(x))
+    print imgtag
+    #for x in imgtag:
+        #tagging.append(str(x))
     #imgtag = ['cat', 'dog', 'snake']
     return render_template('result.html', imgurl = img, tags = tagging)
 
