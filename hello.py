@@ -19,6 +19,8 @@ def hello():
 
 @app.route("/result", methods=["GET", "POST"])
 def checkCat():
+    tagging = []
+    isCat = False
     img = request.form['imgurl']
     result = clarifai_api.tag_image_urls(img)
     res =  json.dumps(result)
