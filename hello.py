@@ -21,10 +21,10 @@ def hello():
 def checkCat():
     img = request.form['imgurl']
     result = clarifai_api.tag_image_urls(img)
-    print json.dumps(result)
-    #parsed_json = json.loads(result)
-    imgtag = result['status_code']
-    imgtag = ['cat', 'dog', 'snake']
+    res =  json.dumps(result)
+    parsed_json = json.loads(res)
+    imgtag = result['result']['tag']['classes']
+    #imgtag = ['cat', 'dog', 'snake']
     return render_template('result.html', imgurl = img, tags = imgtag)
 
 if __name__ == "__main__":
