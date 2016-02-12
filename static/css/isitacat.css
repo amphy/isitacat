@@ -7,11 +7,22 @@ body {
   font-family: 'Indie Flower', cursive;
 }
 
+div {
+  background-color: #ffffff;
+}
+
 .content {
   position: relative;
+  width: 500px;
+  margin-left: auto;
+}
+
+.content img {
+  width: 30%;
+  height: 30%;
 }
 
 #tags {
-  float: left;
+  float: right;
   position: relative;
 }
