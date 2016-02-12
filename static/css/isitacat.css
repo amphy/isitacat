@@ -6,3 +6,7 @@ body {
   color: #0743ec;
   font-family: 'Indie Flower', cursive;
 }
+
+#tags {
+  float: left;
+}

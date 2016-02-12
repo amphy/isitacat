@@ -6,19 +6,22 @@ filename='css/isitacat.css') }}">
   </head>
 
   <body>
+    <div>
+    <img src= "{{ imgurl }}">
     The image link is: {{ imgurl }}
-    <br /><br />
-    Here are the tags: <br />
-    {% for o in tags %}
-      {{ o }} <br />
-    {% endfor %}
-
     {% if isCat %}
     <h1>Your picture is a Cat </h1>
     {% else %}
     <h1>Your picture is not a Cat</h1>
     {% endif %}
-
+    </div>
+    <div id="tags">
+    <br /><br />
+    Here are the tags: <br />
+    {% for o in tags %}
+      {{ o }} <br />
+    {% endfor %}
+    </div>
   </body>
 
 </html>
