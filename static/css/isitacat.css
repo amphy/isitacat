@@ -14,6 +14,8 @@ div {
 .content {
   width: 60%;
   padding: 5px;
+  position: relative;
+  float: right;
 }
 
 .content img {
@@ -23,6 +25,5 @@ div {
 
 #tags {
   padding: 5px;
-  float: left;
-  position: relative;
+  margin-right: 20%;
 }
