@@ -1,6 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
 body {
   background-image: url('../img/background.png');
   background-repeat: repeat;
   color: #0743ec;
-  font-family: Arial, serif;
+  font-family: 'Indie Flower', cursive;
 }
