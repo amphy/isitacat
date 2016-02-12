@@ -8,13 +8,6 @@ filename='css/isitacat.css') }}">
   <body>
   <center>
   <div>
-    <div id="tags">
-    <br /><br />
-    Here are the tags: <br />
-    {% for o in tags %}
-      {{ o }} <br />
-    {% endfor %}
-    </div>
 
     <div class="content">
     The image link is: {{ imgurl }}
@@ -24,6 +17,16 @@ filename='css/isitacat.css') }}">
     <h1>Your picture is not a Cat</h1>
     {% endif %}
     </div>
+
+    <div id="tags">
+    <br /><br />
+    Here are the tags: <br />
+    {% for o in tags %}
+      {{ o }} <br />
+    {% endfor %}
+    </div>
+
+
   </div>
   </center>
   </body>
