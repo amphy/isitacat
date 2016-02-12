@@ -9,21 +9,7 @@ body {
 
 div {
   background-color: #ffffff;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-#nowhite {
-  background-color: transparent;
-}
-
-.content {
-  width: 60%;
-  padding: 5px;
-  position: relative;
-  float: right;
-}
-
-#tags {
-  padding: 5px;
-  margin-right: 20%;
-  width: 30%;
-}
