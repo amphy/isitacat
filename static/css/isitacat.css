@@ -2,4 +2,5 @@ body {
   background-image: url('../img/background.png');
   background-repeat: repeat;
   color: #0743ec;
+  font-family: Arial, serif;
 }
