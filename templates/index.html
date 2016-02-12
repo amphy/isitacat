@@ -6,16 +6,16 @@ filename='css/isitacat.css') }}">
   </head>
 
   <body>
-
+     <center>
     <img src="{{ url_for('static', filename='img/isitacat.png') }}" 
 alt="isitacatlogo" />
-    <h1>Is it a cat?</h1>
 
-    Insert an image URL:
+    <b>Insert an image URL:</b>
     <form action="/result" method="post">
       <input type="text" name="imgurl">
       <input type="submit">
     </form>
+  </center>
   </body>
 
 </html>
