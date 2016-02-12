@@ -7,6 +7,14 @@ filename='css/isitacat.css') }}">
 
   <body>
   <div>
+    <div id="tags">
+    <br /><br />
+    Here are the tags: <br />
+    {% for o in tags %}
+      {{ o }} <br />
+    {% endfor %}
+    </div>
+
     <div class="content">
     <img src= "{{ imgurl }}">
     <br /> <br />
@@ -16,13 +24,6 @@ filename='css/isitacat.css') }}">
     {% else %}
     <h1>Your picture is not a Cat</h1>
     {% endif %}
-    </div>
-    <div id="tags">
-    <br /><br />
-    Here are the tags: <br />
-    {% for o in tags %}
-      {{ o }} <br />
-    {% endfor %}
     </div>
   </div>
   </body>
