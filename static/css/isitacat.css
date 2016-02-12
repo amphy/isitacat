@@ -1,5 +1,4 @@
 body {
-  background-image: url('{{ url_for('static', 
-filename='img/background.png') }}');
+  background-image: url('static/img/background.png');
   background-repeat: repeat;
 }
