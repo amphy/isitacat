@@ -7,6 +7,11 @@ body {
   font-family: 'Indie Flower', cursive;
 }
 
+.content {
+  position: relative;
+}
+
 #tags {
   float: left;
+  position: relative;
 }
